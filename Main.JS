@@ -1,0 +1,17 @@
+var images = ["1.jpg" , "2.jpg" , "3.jpg" , "4.jpg" , "5.jpg"] ;
+var names = ["Family book" , "Me and My Mother" , "My parents" , "Me and my Sister" , "Big brother and sister" , "My parents"] ;
+
+var i = 0 ;
+function add_img()
+{
+    i++;
+    var numbers_of_family_member_in_array = 5 ;
+    if(i > numbers_of_family_member_in_array)
+    {
+        i = 0 ;
+    }
+    var updatedImage = images[i] ;
+    var updatedName = names[i] ;
+    document.getElementById("family_member_image").src = updatedImage
+    document.getElementById("family_member_name").innerHTML = updatedName
+}
